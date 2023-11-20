@@ -1,0 +1,62 @@
+/* style.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1 a {
+    font-family: 'Roboto', sans-serif; /* Use Roboto for h1 */
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+.content {
+    margin: 20px;
+    flex: 1; /* Allow the content area to grow and fill remaining space */
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

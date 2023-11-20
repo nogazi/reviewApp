@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us - Review App{% endblock %}
+
+{% block content %}
+    <h2>Contact Us</h2>
+    <p>Feel free to contact us using the form below:</p>
+
+    <form method="post" action="{% url 'contact_us' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

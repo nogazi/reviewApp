@@ -3,6 +3,8 @@ from .views import home_view, about_us_view, contact_us_view, product_list_view,
 from django.contrib.auth.views import LogoutView
 from django.conf import settings
 from django.conf.urls.static import static
+from django.urls import path, include
+from django.contrib import admin
 
 
 urlpatterns = [
@@ -15,7 +17,6 @@ urlpatterns = [
     path('profile/', profile_view, name='profile'),
     path('logout/', LogoutView.as_view(), name='logout'),
     path('add_product/', add_product_view, name='add_product'),
-    # Add other URL patterns as needed
 ]
 
 if settings.DEBUG:

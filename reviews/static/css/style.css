@@ -10,6 +10,19 @@ body {
     text-align: center;
 }
 
+.content-section {
+    margin-bottom: 30px;
+}
+
+.content-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.content-section p {
+    font-size: 1.1em;
+}
+
 h1 a {
     font-family: 'Roboto', sans-serif; /* Use Roboto for h1 */
     text-decoration: none;

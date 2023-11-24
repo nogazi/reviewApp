@@ -15,7 +15,7 @@ from .forms import ProductForm
 
 
 def home_view(request):
-    return render(request, 'base.html')
+    return render(request, 'home.html')
 
 def about_us_view(request):
     return render(request, 'reviews/about_us.html')
@@ -24,8 +24,7 @@ def contact_us_view(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            # Process the form data (you can add email sending logic here)
-            return render(request, 'reviews/contact_us_success.html')  # Redirect to a success page
+            return render(request, 'reviews/contact_us_success.html') 
     else:
         form = ContactForm()
 
